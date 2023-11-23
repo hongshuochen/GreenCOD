@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>APSIPA2022_GreenCODt</title>
+
+<style media="screen" type="text/css">
+body
+{
+  border: 0pt none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0pt;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: 0pt;
+  padding: 0pt;
+  vertical-align: baseline;
+}
+body {
+  position: relative;
+  margin: 3em auto 2em auto;
+  width: 1080px;
+  font-family: Times New Roman, Lato, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #fdfdfd;
+}
+</style>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1ec4ad5c61857459aa78d5ee7ddee28d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+<h3 align="center"><i><font size="3" face="Palatino Linotype">APSIPA Transactions on Signal and Information Processing 2023</font></i></h3>
+
+<table align="center">
+<td align="center">
+<h1>GreenCOD: Green Camouflaged Object Detection</h1>
+<h3>
+	<a href="http://mhaiyang.github.io" target="_blank"><font size="3"><b>Hong-Shuo Chen</b></font></a><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3"><b>Yao Zhu</b></font><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3"><b>Suya You</b></font><sup><font size="2">2</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3"><b>C.-C. Jay Kuo</b></font><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+</h3>
+
+
+<sup><font size="2">1</font></sup>
+<b><a><font size="3">University of Southern California</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup><font size="2">2</font></sup>
+<b><a><font size="3">DEVCOM Army Research Laborator</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<!--<br>-->
+<!--<br>&nbsp;-->
+<!--&lt;!&ndash;<sup><font size="2">&dagger;</font></sup>&ndash;&gt;-->
+<!--<sup><font size="3">*</font></sup>-->
+<!--<a><font size="3"> Corresponding author</font></a>-->
+<br>
+<br>&nbsp;
+
+	<b><a><font size="3"> Contact us:&nbsp;&nbsp;&nbsp;&nbsp;<i>hongshuo@usc.edu</i></font></a></b>
+
+</td>
+</table>
+
+
+<br><br>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=400 src="results_large_3s.gif"></td>
+</tr>
+<tr>
+	<td align="center"><img border=0 height=400 src="results_small_3s.gif"></td>
+</tr>
+</table>
+
+<br>
+<h2><p><font size="6"><b>Abstract</b></font></p></h2>
+<hr/>
+<p><font size="4" face="Palatino Linotype">A Gradient Boosting Based Camouflaged Object Detection method without back propagation, called GreenCOD is proposed in this work. GreenCOD is developed based on extreme gradient boosting (XGBoost) with deep features extracted from Deep Neural Network (DNN). Nowadays, researcher designed complex architectures of deep neural networks to improve the performance of Camouflaged Object Detection and fine-tuned the model by back propagation. However, those methods are usually computation extensive and with minor differences across different models. In the work, we designed a new paradigm by using gradient boosting to conduct the image segmentation. With simple design of the model, our model use less data, less parameters and less FLOPs comparing to different state-of-the-art deep learning models while keep the high performance. The models is trained without any back propagation and it increases 4x data efficiency, reduce 50% of the model parameters and only used 10\% of the FLOPs. This new paradigm without back propagation is green and have more opportunities to explore.
+</font></p>
+
+
+<br>
+<h2><p><font size="6"><b>GreenCOD</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 width=900 src="pipeline.png"></td>
+</tr>
+</table>
+
+<br>
+<h2><p><font size="6"><b>Experimental Results</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 width=900 src="COD10K_less_50G.png"></td>
+</tr>
+<tr>
+	<td align="center"><img border=0 width=900 src="COD10K_more_50G.png"></td>
+</tr>
+</table>
+<table align="center">
+<!-- <tr>
+	<td align="center"><img border=0 height=600 width=900 src="figure.png"></td>
+</tr> -->
+</table>
+
+<br>
+<h2><p><font size="6"><b>Downloads</b></font></p></h2>
+<hr/>
+<div align="left">
+		<table>						
+		<tr align="left">
+		<td>
+			<font size="4">Paper</font>
+		</td>
+		<td>
+			<!-- <font size="4">: [ <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Mei_Camouflaged_Object_Segmentation_With_Distraction_Mining_CVPR_2021_paper.pdf" target="_blank">CVPR Version</a> ]</font> -->
+			<font size="4">: [ <a href="https://arxiv.org/pdf/2104.10475.pdf" target="_blank">arXiv Version</a> ]</font>
+		</td>
+		</tr>
+							
+		<tr align="left">
+		<td>
+			<font size="4">Experimental results</font>
+		</td>
+		<td>
+		<font size="4">: <a href="https://drive.google.com/file/d/1Nj-Fdelshj0SfoUVbvsDYQULN-VzgaOo/view?usp=sharing" target="_blank">[ Results.zip ]</a></font>
+		</td>
+
+		</tr>
+
+		<tr align="left">
+		<td>
+			<font size="4">Pre-trained model</font>
+		</td>
+		<td>
+			<font size="4">: <a href="https://drive.google.com/file/d/10viPCyjGE919gNtyNdSp2YhnvEXCMVe8/view?usp=sharing" target="_blank">[ PFNet.pth ]</a></font>
+		</td>
+		</tr>
+					
+		<tr align="left">
+		<td>
+			<font size="4">Source code</font>
+		</td>
+		<td>
+			<font size="4">: <a href="https://github.com/Mhaiyang/CVPR2021_PFNet" target="_blank">[ Code ]</a> </font>
+		</td>
+		</tr>
+
+		<tr align="left">
+		<td>
+			<font size="4">COD10K training set</font>
+		</td>
+		<td>
+			<font size="4">: [ <a href="https://drive.google.com/file/d/1D9bf1KeeCJsxxri6d2qAC7z6O1X_fxpt/view" target="_blank">Google Drive</a> ]</font>
+		</td>
+		</tr>
+
+		<tr align="left">
+		<td>
+			<font size="4">COD10K testing set</font>
+		</td>
+
+		<td>
+			<font size="4">: [ <a href="https://drive.google.com/file/d/1QEGnP9O7HbN_2tH999O3HRIsErIVYalx/view" target="_blank">Google Drive</a> ]</font>
+		</td>
+		</tr>
+			
+		</table>
+</div>
+<br>
+<br>
+
+<h2><p><font size="6" color="black"><b>BibTex</b></font></p></h2>
+<hr/>
+<font size="3">
+<!-- @InProceedings{Mei_2021_CVPR,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author = {Mei, Haiyang and Ji, Ge-Peng and Wei, Ziqi and Yang, Xin and Wei, Xiaopeng and Fan, Deng-Ping},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title = {Camouflaged Object Segmentation with Distraction Mining},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;month = {June},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year = {2021}<br>
+} -->
+</font>
+
+<br><br>
+<h2>Website visit statistics</h2>
+<hr/>
+<!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=oltD0PapAwP93FMgNPzI2JHNLRqAH6vR4MZNpNrmmHY'></script> -->
+
+</body>
+
+</html>
